@@ -1,0 +1,8 @@
+"0","bike_orderlines_tbl %>%"
+"0","    select(order_date, total_price) %>%"
+"0","    mutate(month = order_date %>% month(label = TRUE, abbr = FALSE))%>%"
+"0","    group_by(month)%>%"
+"0","    summarize(sales = sum(total_price))%>%"
+"0","    ungroup()%>%"
+"0","    mutate(sales = sales%>%scales::dollar()) %>%"
+"0","    set_names(names(.)%>%str_to_title())"

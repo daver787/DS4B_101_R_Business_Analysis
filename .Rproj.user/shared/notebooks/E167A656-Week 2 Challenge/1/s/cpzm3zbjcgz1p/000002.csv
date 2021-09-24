@@ -1,0 +1,29 @@
+"0","# Read bike orderlines data"
+"0","path_bike_orderlines <- ""../00_data/bike_sales/data_wrangled/bike_orderlines.rds"""
+"0","bike_orderlines_tbl <- read_rds(path_bike_orderlines)"
+"0",""
+"0","glimpse(bike_orderlines_tbl)"
+"1","Rows: 15,644"
+"1",""
+"1","
+"
+"1","Columns: 13"
+"1",""
+"1","
+"
+"1","$ order_date     [3m[38;5;246m<dttm>[39m[23m 2011-01-07, 2011-01-07, 2011-01-10, 2011-01-10, 2011-01-10, 2011-01-10, 2011-01-10, 2011-01-10, 20…
+$ order_id       [3m[38;5;246m<dbl>[39m[23m 1, 1, 2, 2, 3, 3, 3, 3, 3, 4, 5, 5, 5, 5, 6, 6, 6, 6, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 8, …
+$ order_line     [3m[38;5;246m<dbl>[39m[23m 1, 2, 1, 2, 1, 2, 3, 4, 5, 1, 1, 2, 3, 4, 1, 2, 3, 4, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14…
+$ quantity       [3m[38;5;246m<dbl>[39m[23m 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 1, 1, 1, 2, 1, …
+$ price          [3m[38;5;246m<dbl>[39m[23m 6070, 5970, 2770, 5970, 10660, 3200, 12790, 5330, 1570, 4800, 480, 11190, 1250, 2060, 1960, 4500, 2…
+$ total_price    [3m[38;5;246m<dbl>[39m[23m 6070, 5970, 2770, 5970, 10660, 3200, 12790, 5330, 1570, 4800, 480, 22380, 1250, 2060, 1960, 4500, 2…
+$ model          [3m[38;5;246m<chr>[39m[23m ""Jekyll Carbon 2"", ""Trigger Carbon 2"", ""Beast of the East 1"", ""Trigger Carbon 2"", ""Supersix Evo Hi-…
+$ category_1     [3m[38;5;246m<chr>[39m[23m ""Mountain"", ""Mountain"", ""Mountain"", ""Mountain"", ""Road"", ""Mountain"", ""Road"", ""Road"", ""Road"", ""Road"",…
+$ category_2     [3m[38;5;246m<chr>[39m[23m ""Over Mountain"", ""Over Mountain"", ""Trail"", ""Over Mountain"", ""Elite Road"", ""Over Mountain"", ""Elite R…
+$ frame_material [3m[38;5;246m<chr>[39m[23m ""Carbon"", ""Carbon"", ""Aluminum"", ""Carbon"", ""Carbon"", ""Carbon"", ""Carbon"", ""Carbon"", ""Aluminum"", ""Carb…
+$ bikeshop_name  [3m[38;5;246m<chr>[39m[23m ""Ithaca Mountain Climbers"", ""Ithaca Mountain Climbers"", ""Kansas City 29ers"", ""Kansas City 29ers"", ""…
+$ city           [3m[38;5;246m<chr>[39m[23m ""Ithaca"", ""Ithaca"", ""Kansas City"", ""Kansas City"", ""Louisville"", ""Louisville"", ""Louisville"", ""Louisv…
+$ state          [3m[38;5;246m<chr>[39m[23m ""NY"", ""NY"", ""KS"", ""KS"", ""KY"", ""KY"", ""KY"", ""KY"", ""KY"", ""MI"", ""CO"", ""CO"", ""CO"", ""CO"", ""AZ"", ""AZ"", ""AZ…"
+"1",""
+"1","
+"
